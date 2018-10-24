@@ -6,7 +6,12 @@ namespace OOPdemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Owner owner = new Owner("Mitchell");
+
+            Dog dog = new Dog() { Name = "Snoopy", Age = 2 };
+            owner.Adopt(dog);
+            dog.Speak();
+            dog.Speak(3);
         }
     }
 }
